@@ -1,11 +1,11 @@
-const express = require('express');
+cnst express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
   console.log('Hello world received a request.');
 
   const target = process.env.TARGET || 'World';
-  res.send(`Hello ${target}!`);
+  res.send(`Hello ${target} CD test!`);
 });
 
 const port = process.env.PORT || 8080;
